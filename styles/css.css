@@ -12,6 +12,7 @@ body {
   font-family: "Lato", Arial, sans-serif;
   color: #19282f;
   margin: 0;
+  padding: 0.1px;
 }
 
 h1 {
@@ -25,96 +26,94 @@ h2, h3 {
 }
 
 a {
-  color: black;
+  color: #59575a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ebb463;
+  color: #f8a800;
   text-decoration: line-through;
 }
 
 .emphstyle {
-  color: #9c444a;
+  color: #c6b63f;
   text-transform: uppercase;
 }
 
 nav {
   font-size: 17px;
-  position: fixed;
   width: 100%;
-  background-color: white;
+  margin: 0;
+  background-color: #e3bfad;
+  position: fixed;
 }
 
 nav ul {
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  margin: 6px;
-  justify-content: center;
+  max-width: 400px;
+  padding: 6px 0;
 }
 
 nav ul li {
-  display: inline-block;
+  flex: 1;
+  list-style-type: none;
   text-decoration: none;
   padding: 12px 24px;
   letter-spacing: 1px;
-  /* background-color: red; */
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #59575a;
 }
 
 #home {
-  background-image: url(../media/banner3.jpg);
-  background-attachment: fixed;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  background-color: white;
 }
 
 #home .hover {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #home .text {
   flex: 1;
   width: 600px;
   margin-right: 70px;
+  color: #59575a;
 }
 
 #home .text h1 {
   font-size: 60px;
   width: 100%;
-  text-align: right;
-}
-
-#intro {
-  margin: 35px;
   text-align: center;
-  padding: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  color: #59575a;
 }
 
-#intro h1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-}
-
-#intro .introtext {
-  width: 720px;
+.introtext {
+  width: 600px;
+  margin: auto;
+  text-align: justify;
 }
 
 #about {
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 35px 132px;
-  background-color: #faf5f7;
+  color: #59575a;
 }
 
 #about .col {
@@ -136,6 +135,7 @@ nav ul li {
 
 #about .col h2 {
   margin-top: 0;
+  color: #c6b63f;
 }
 
 #about .img {
@@ -144,6 +144,15 @@ nav ul li {
 
 #portfolio {
   padding: 35px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#portfolio h1 {
+  color: #c6b63f;
+  text-align: center;
 }
 
 #portfolio .row {
@@ -170,7 +179,7 @@ nav ul li {
 }
 
 .seemore {
-  background-color: #9c444a;
+  background-color: #cf1c24;
   text-align: center;
   width: 150px;
   margin: 35px auto;
@@ -181,12 +190,12 @@ nav ul li {
 }
 
 .seemore:hover {
-  background-color: #ebb463;
+  background-color: #f8a800;
   text-decoration: underline;
 }
 
 #contact {
-  background-color: #67606b;
+  background-color: #59575a;
   padding: 35px;
   text-align: center;
 }
@@ -200,13 +209,13 @@ nav ul li {
 }
 
 #contact a {
-  color: white;
+  color: #e3bfad;
   letter-spacing: 0.5px;
   text-decoration: underline;
 }
 
 #contact a:hover {
-  color: #ebb463;
+  color: #f8a800;
   font-style: italic;
 }
 
@@ -214,10 +223,17 @@ nav ul li {
   color: white;
 }
 
+.workimgs {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .workimg {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background-color: #faf5f7;
 }
 
 .workimg img {
@@ -225,8 +241,13 @@ nav ul li {
   margin: 0;
 }
 
+.firstrow {
+  margin-top: 56px;
+}
+
 .desc {
   padding: 35px;
+  color: #59575a;
 }
 .desc h1 {
   padding: 35px;
@@ -234,7 +255,7 @@ nav ul li {
 }
 
 .desc h1::first-letter {
-  color: #ebb463;
+  color: #f8a800;
   font-size: 42px;
   text-decoration: underline;
 }
@@ -252,7 +273,7 @@ nav ul li {
 
 .info h4 {
   margin: 0;
-  color: #ebb463;
+  color: #f8a800;
 }
 
 .info h5 {
@@ -268,39 +289,42 @@ nav ul li {
 
 .process {
   padding: 35px;
+  color: #59575a;
 }
 
 .process h2, .process h3 {
   margin: 0 0 12px 0;
-  color: #ebb463;
+  color: #f8a800;
   text-align: center;
 }
 
 .tasks {
-  background-color: #9c444a;
+  background-color: #c6b63f;
   padding: 35px;
+  color: #59575a;
 }
 
 .tasks tr td:first-child {
   width: 24px;
   font-size: 32px;
-  color: #ebb463;
+  color: #cf1c24;
   font-weight: bold;
+  text-align: left;
   font-family: "Poppins", Arial, Sans-serif;
 }
 
 .a {
-  background-color: #313131;
+  background-color: #59575a;
   color: #f0f0f0;
 }
 
 .b {
   background-color: white;
-  color: black;
+  color: #59575a;
 }
 
 .c {
-  color: black;
+  color: #59575a;
   background-color: #faf5f7;
 }
 
@@ -325,4 +349,114 @@ nav ul li {
 
 .sketches img {
   flex: 1;
+}
+
+.examples {
+  max-width: 900px;
+  margin: auto;
+}
+
+.examples h3, .examples h4, .example h5 {
+  text-align: center;
+  margin: 0 0 6px 0;
+}
+
+.examples h4 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.examples h5 {
+  color:#f8a800;
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 300px;
+  margin-bottom: 105px;
+}
+
+.example:first-of-type {
+  margin-top: 105.5px;
+}
+
+.exampleimg {
+  max-height: 300px;
+  padding: 0;
+}
+
+.exampleimg img {
+  width: 100%;
+}
+
+.exampletext {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  min-width: 400px;
+  padding: 35px;
+  color: #59575a;
+  text-align: justify;
+  /* background-color: #faf5f7; */
+}
+
+.exampletext p {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.viewwork {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.button {
+  border-radius: 35px;
+  padding: 12px 24px;
+  color: white;
+  letter-spacing: 1px;
+  background-color: #cf1c24;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #f8a800;
+  text-decoration: underline;
+}
+
+.examples a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+
+
+
+  .example {
+    max-height: none;
+    margin: 35px;
+  }
+
+  .exampleimg {
+    max-height: none;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .exampletext {
+    max-height: none;
+    max-width: 720px;
+    min-width: 200px;
+    margin: auto;
+  }
+
+  .viewwork {
+    margin-top: 12px;
+  }
+
+
 }
