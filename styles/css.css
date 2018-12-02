@@ -89,7 +89,7 @@ nav ul li a:hover {
 #home .text {
   flex: 1;
   width: 600px;
-  margin-right: 70px;
+  /* margin-right: 70px; */
   color: #59575a;
 }
 
