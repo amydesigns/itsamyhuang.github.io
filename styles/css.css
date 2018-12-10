@@ -119,7 +119,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 35px 132px;
-  color: black;
+  color: #59575a;
 }
 
 #about .col {
@@ -204,7 +204,8 @@ nav ul li a:hover {
 }
 
 #contact {
-  background-color: #59575a;
+  background-size: cover;
+  background-color: #242424;
   padding: 35px;
   text-align: center;
 }
@@ -218,7 +219,7 @@ nav ul li a:hover {
 }
 
 #contact a {
-  color: #e3bfad;
+  color: #999999;
   letter-spacing: 0.5px;
   text-decoration: underline;
 }
@@ -229,7 +230,7 @@ nav ul li a:hover {
 }
 
 #contact h1 {
-  color: white;
+  color: #EF3E36;
 }
 
 .workimgs {
@@ -250,13 +251,9 @@ nav ul li a:hover {
   margin: 0;
 }
 
-.firstrow {
-  margin-top: 56px;
-}
-
 .desc {
   padding: 35px;
-  color: #59575a;
+  color: black;
 }
 .desc h1 {
   padding: 35px;
@@ -282,7 +279,7 @@ nav ul li a:hover {
 
 .info h4 {
   margin: 0;
-  color: #f8a800;
+  color: #EF3E36;
 }
 
 .info h5 {
@@ -310,7 +307,7 @@ nav ul li a:hover {
 .tasks {
   background-color: white;
   padding: 35px;
-  color: #000000; 
+  color: #000000;
 }
 
 .tasks tr td:first-child {
@@ -335,6 +332,10 @@ nav ul li a:hover {
 .c {
   color: #59575a;
   background-color: #faf5f7;
+}
+
+.b h3, .c h3 {
+  color: #EF3E36;
 }
 
 .step {
@@ -409,7 +410,6 @@ nav ul li a:hover {
   padding: 35px;
   color: #59575a;
   text-align: justify;
-  /* background-color: #faf5f7; */
 }
 
 .exampletext p {
