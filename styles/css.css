@@ -8,20 +8,26 @@
   src: url(Lato-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Noto Serif SC";
+  src: url(NotoSerifSC/NotoSerifSC-Regular.otf);
+}
+
+@font-face {
+  font-family: "Noto Serif SC";
+  src: url(NotoSerifSC/NotoSerifSC-Bold.otf);
+  font-weight: bold;
+}
+
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Noto Serif SC", 'Times New Roman', Times, serif;
   color: #19282f;
   margin: 0;
   padding: 0.1px;
 }
 
-h1 {
-  font-family: "Poppins", Arial, sans-serif;
-  text-align: center;
-}
-
-h2, h3 {
-  font-family: "Poppins", Arial, sans-serif;
+h1, h2, h3 {
+  font-family: "Noto Serif SC", "Times New Roman", Times, serif;
   text-align: center;
 }
 
@@ -31,20 +37,19 @@ a {
 }
 
 a:hover {
-  color: #f8a800;
+  color: #EF3E36;
   text-decoration: line-through;
 }
 
 .emphstyle {
-  color: #c6b63f;
-  text-transform: uppercase;
+  font-style: italic;
 }
 
 nav {
+  background-color: white;
   font-size: 17px;
   width: 100%;
   margin: 0;
-  background-color: #e3bfad;
   position: fixed;
 }
 
@@ -65,38 +70,40 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #59575a;
+  color: #999999;
 }
 
 #home {
-  background-size: 100% auto;
+  background-image: url("../media/DSC00541.JPG");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: white;
 }
 
 #home .hover {
   display: flex;
   align-items: center;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #home .text {
   flex: 1;
   width: 600px;
-  color: #59575a;
+  color: white;
 }
 
 #home .text h1 {
   font-size: 60px;
   width: 100%;
   text-align: center;
-  color: #59575a;
+  color: white;
 }
 
 .introtext {
@@ -112,7 +119,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 35px 132px;
-  color: #59575a;
+  color: black;
 }
 
 #about .col {
@@ -134,7 +141,7 @@ nav ul li a:hover {
 
 #about .col h2 {
   margin-top: 0;
-  color: #c6b63f;
+  color: #EF3E36;
 }
 
 #about .img {
@@ -150,7 +157,7 @@ nav ul li a:hover {
 }
 
 #portfolio h1 {
-  color: #c6b63f;
+  color: #EF3E36;
   text-align: center;
 }
 
@@ -178,19 +185,22 @@ nav ul li a:hover {
 }
 
 .seemore {
-  background-color: #cf1c24;
   text-align: center;
   width: 150px;
   margin: 35px auto;
   border-radius: 35px;
+  border: solid 4px #EF3E36;
   padding: 12px 24px;
-  color: white;
+  color: #EF3E36;
+  font-family: "Poppins";
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
 .seemore:hover {
-  background-color: #f8a800;
+  background-color: #EF3E36;
   text-decoration: underline;
+  color: white;
 }
 
 #contact {
@@ -298,9 +308,9 @@ nav ul li a:hover {
 }
 
 .tasks {
-  background-color: #c6b63f;
+  background-color: white;
   padding: 35px;
-  color: #59575a;
+  color: black;
 }
 
 .tasks tr td:first-child {
@@ -416,14 +426,18 @@ nav ul li a:hover {
 .button {
   border-radius: 35px;
   padding: 12px 24px;
-  color: white;
+  color: #EF3E36;
   letter-spacing: 1px;
-  background-color: #cf1c24;
+  background-color: white;
+  border: solid 4px #EF3E36;
   text-align: center;
+  font-family: "Poppins";
+  font-weight: bold;
 }
 
 .button:hover {
-  background-color: #f8a800;
+  background-color: #EF3E36;
+  color: white;
   text-decoration: underline;
 }
 
