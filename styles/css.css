@@ -310,7 +310,7 @@ nav ul li a:hover {
 .tasks {
   background-color: white;
   padding: 35px;
-  color: black;
+  color: #000000; 
 }
 
 .tasks tr td:first-child {
