@@ -354,11 +354,16 @@ nav ul li a:hover {
 .sketches {
   margin: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.sketches img {
+.sketch {
   flex: 1;
+}
+
+.sketch img {
+  width: 100%;
 }
 
 .examples {
