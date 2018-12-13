@@ -34,6 +34,8 @@ h1, h2, h3 {
 a {
   color: #59575a;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 a:hover {
@@ -72,10 +74,41 @@ nav ul li {
 nav ul li a {
   color: black;
   font-weight: bold;
+  position: relative;
 }
 
 nav ul li a:hover {
-  color: #999999;
+  text-decoration: none;
+  color: #f8a800;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3px;
+  background-color: #f8a800;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+nav ul li a.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #home {
@@ -112,14 +145,24 @@ nav ul li a:hover {
   text-align: justify;
 }
 
+#portfolio .viewwork {
+  padding-top: 0;
+}
+
 #about {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 132px 132px 76px;
+  padding: 0;
+  color: #59575a;
+}
+
+#about .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 35px 132px;
-  color: #59575a;
+  flex-direction: row;
+  margin-bottom: 41px;
 }
 
 #about .col {
@@ -148,6 +191,14 @@ nav ul li a:hover {
   width: 100%;
 }
 
+#about .viewwork {
+  padding: 0;
+}
+
+#about a:hover {
+  text-decoration: none;
+}
+
 #portfolio {
   padding: 35px;
   background-color: white;
@@ -166,14 +217,45 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-#portfolio .feature {
+.feature {
   flex: 1;
   min-width: 270px;
   max-width: 500px;
+  position: relative;
 }
 
-#portfolio .feature img {
+.feature img {
   width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f8a800;
+}
+
+.feature:hover .overlay {
+  opacity: 0.95;
+}
+
+.overlaydesc {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #portfolio a {
@@ -182,25 +264,6 @@ nav ul li a:hover {
 
 #portfolio a:hover {
   text-decoration: none;
-}
-
-.seemore {
-  text-align: center;
-  width: 150px;
-  margin: 35px auto;
-  border-radius: 35px;
-  border: solid 4px #EF3E36;
-  padding: 12px 24px;
-  color: #EF3E36;
-  font-family: "Poppins";
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.seemore:hover {
-  background-color: #EF3E36;
-  text-decoration: underline;
-  color: #ffffff;
 }
 
 #contact {
@@ -251,6 +314,28 @@ nav ul li a:hover {
   margin: 0;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 35px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+figcaption h3 {
+  font-size: 16px;
+}
+
+figure img {
+  flex: none;
+  margin: 0;
+}
+
+.main {
+  margin-top: 61px;
+}
+
 .desc {
   padding: 35px;
   color: black;
@@ -264,6 +349,11 @@ nav ul li a:hover {
   color: #f8a800;
   font-size: 42px;
   text-decoration: underline;
+}
+
+.desc h1 a:hover {
+  text-decoration: none;
+  font-style: italic;
 }
 
 .info {
@@ -291,6 +381,14 @@ nav ul li a:hover {
   width: 720px;
   margin: 12px auto;
   text-align: justify;
+}
+
+.text a {
+  color: #f8a800;
+}
+
+.text a:hover {
+  color: #EF3E36;
 }
 
 .process {
@@ -397,15 +495,6 @@ nav ul li a:hover {
   margin-top: 105.5px;
 }
 
-.exampleimg {
-  max-height: 300px;
-  padding: 0;
-}
-
-.exampleimg img {
-  width: 100%;
-}
-
 .exampletext {
   flex: 1;
   display: flex;
@@ -438,12 +527,14 @@ nav ul li a:hover {
   text-align: center;
   font-family: "Poppins";
   font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
+
 
 .button:hover {
   background-color: #EF3E36;
   color: white;
-  text-decoration: underline;
 }
 
 .examples a:hover {
