@@ -179,6 +179,7 @@ nav ul li a.active:before {
   margin: 35px;
   text-align: justify;
   align-content: center;
+  align-items: flex-start;
 }
 
 #about .col h2, .coltext {
@@ -198,6 +199,7 @@ nav ul li a.active:before {
 
 #about .img {
   width: 100%;
+  height: auto;
 }
 
 #about .viewwork {
