@@ -233,8 +233,7 @@ nav ul li a.active:before {
   flex: 1;
   min-width: 200px;
   max-width: 500px;
-  margin: 0;
-  padding: 0;
+  margin: auto;
   position: relative;
 }
 
@@ -380,6 +379,7 @@ figure img {
 .info {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   width: 720px;
   margin: 35px auto;
 }
@@ -417,6 +417,10 @@ figure img {
   color: #59575a;
 }
 
+.process img {
+  margin: 12px auto;
+}
+
 .process h2, .process h3 {
   margin: 0 0 12px 0;
   color: #f8a800;
@@ -426,6 +430,7 @@ figure img {
 .tasks {
   background-color: #ffffff;
   padding: 35px;
+  margin: 12px auto;
   color: #000000;
 }
 
@@ -609,6 +614,26 @@ figure img {
 
   .viewwork {
     margin-top: 12px;
+  }
+
+  .text, .info, .step, .step2 {
+    width: 90%;
+    margin: 5%;
+    text-align: left;
+  }
+
+  video {
+    width: 100%;
+    margin: 0;
+  }
+
+  figure {
+    width: 100%;
+    margin: 35px 0 0;
+  }
+
+  figure img {
+    width: 100%;
   }
 
 }
