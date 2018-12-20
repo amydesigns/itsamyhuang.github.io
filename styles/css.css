@@ -479,7 +479,6 @@ figure img {
   margin: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .sketch {
@@ -487,6 +486,23 @@ figure img {
 }
 
 .sketch img {
+  width: 100%;
+}
+
+.sketch2, .sketch3 {
+  margin: auto;
+}
+
+.sketch2 img {
+  width: 860px;
+}
+
+.sketch3 {
+  max-width: 360px;
+  margin: auto 1%;
+}
+
+.sketch3 img {
   width: 100%;
 }
 
@@ -593,6 +609,10 @@ figure img {
 
   .workimg img {
     width: 200%;
+  }
+
+  .sketches {
+    flex-wrap: wrap;
   }
 
   .example {
