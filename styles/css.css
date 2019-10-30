@@ -352,6 +352,12 @@ figure img {
   margin: 0;
 }
 
+.media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .main {
   margin-top: 61px;
 }
@@ -362,7 +368,7 @@ figure img {
 }
 .desc h1 {
   padding: 35px;
-  margin: 0;
+  margin-top: 35px;
 }
 
 .desc h1::first-letter {
