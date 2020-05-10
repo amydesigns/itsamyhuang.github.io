@@ -18,6 +18,7 @@ html {
 
 body {
   font-family: "Frank Ruhl Libre", 'Times New Roman', sans-serif;
+  background-image: linear-gradient(to right top, #f7d961, #f2cb53, #edbe45, #e7b037, #e2a229, #df862c, #d66a33, #c9503a, #a52c4b, #731a50, #3c1548, #020731);
 }
 
 h1 {
@@ -42,16 +43,18 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 16px;
+  font-family: "Coolvetica", 'Arial', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 em {
   font-style: normal;
-  color: #f2c444;
+  color: #a52c4b;
 }
 
 a {
@@ -62,17 +65,16 @@ a {
 }
 
 a:hover {
-  color: #f2c444;
+  color:#F7D961;
 }
 
 
 nav {
-  background-color: #3D4F62;
+  background-color: rgba(255, 255, 255, 0.25);
   font-size: 17px;
   width: 100%;
   margin: 0;
   position: fixed;
-  /* z-index: 9999; */
   display: flex;
   justify-content: flex-end;
 }
@@ -93,13 +95,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #F9DADC;
+  color: #ffffff;
   position: relative;
 }
 
 nav ul li a:hover {
   text-decoration: none;
-  color: #f2c444;
+  color: #F7D961;
 }
 
 .container p {
@@ -110,9 +112,8 @@ nav ul li a:hover {
 
 
 #landing {
-  background-color: #3D4F62;
   height: 60vh;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
@@ -123,8 +124,7 @@ nav ul li a:hover {
 }
 
 #about {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
@@ -155,8 +155,7 @@ nav ul li a:hover {
 }
 
 #education {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
@@ -167,7 +166,6 @@ nav ul li a:hover {
 }
 
 .row {
-  /* background-color: yellow; */
   display: flex;
   flex-direction: row;
   margin: 8%;
@@ -186,8 +184,7 @@ nav ul li a:hover {
 }
 
 #experiences {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,8 +197,7 @@ nav ul li a:hover {
 }
 
 #experiences2 {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,12 +210,11 @@ nav ul li a:hover {
 }
 
 #experiences2 h5 {
-  color: #f2c444;
+  color: #a52c4b;
 }
 
 #projects {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,8 +227,7 @@ nav ul li a:hover {
 }
 
 #projects2 {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,12 +240,11 @@ nav ul li a:hover {
 }
 
 #projects2 h5 {
-  color: #f2c444;
+  color: #a52c4b;
 }
 
 #portfolio {
-  background-color: #3D4F62;
-  color: #F9DADC;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,7 +258,7 @@ nav ul li a:hover {
 
 #footer {
   background-color: #f9f9f9;
-  color: #3D4F62;
+  color: #020731;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,7 +275,7 @@ nav ul li a:hover {
 }
 
 #footer em {
-  color: #3D4F62;
+  color: #020731;
   text-transform: uppercase;
 }
 
