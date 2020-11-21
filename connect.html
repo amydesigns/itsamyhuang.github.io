@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>connect with amy huang</title>
+    <link href="./styles/css.css" type="text/css" rel="stylesheet" />
+    <link href="./media/favicon.png" type="image/png" rel="shortcut icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./scripts/navbar.js" type="text/javascript"></script>
+    <script src="./scripts/isInViewport.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="service.html">service</a></li>
+        <li><a href="connect.html">connect</a></li>
+        <li><a href="fun.html">fun</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME LANDING PAGE -->
+    <div class="connect_container tag">
+
+      <div class="phone">
+        <div class="phone_screen">
+
+          <h2>choose a method</h2>
+
+          <div class="social_group">
+            <img class="icon" src="./media/icon_email.png" alt="Email Icon"/>
+            <h3> email </h3>
+            <a href="mailto:amyhuang3799@gmail.com" class="social_overlay">
+              <img src="./media/redirect.png" alt="Redirect to Email" />
+            </a>
+          </div>
+
+          <div class="social_group">
+            <img class="icon" src="./media/icon_linkedin.png" alt="LinkedIn Icon"/>
+            <h3> linkedin </h3>
+            <a href="www.linkedin.com/in/itsamyhuang" class="social_overlay">
+              <img src="./media/redirect.png" alt="Redirect to LinkedIn" />
+            </a>
+          </div>
+
+          <div class="social_group">
+            <img class="icon" src="./media/icon_medium.png" alt="Medium Icon"/>
+            <h3> medium </h3>
+            <a href="https://itsamyhuang.medium.com/" class="social_overlay">
+              <img src="./media/redirect.png" alt="Redirect to Medium" />
+            </a>
+          </div>
+
+          <div class="social_group">
+            <img class="icon" src="./media/icon_insta.png" alt="Instagram Icon"/>
+            <h3> instagram <h3>
+              <a href="https://www.instagram.com/its_amyhuang" class="social_overlay">
+                <img src="./media/redirect.png" alt="Redirect to Instagram" />
+              </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="connect_text">
+        <h2>how would you like to</h2>
+        <h1>c<span id="type_connect"></span></h1>
+      </div>
+
+      <div id="typed_connect">
+        <p>onnect?</p>
+      </div>
+
+      <script>
+        var typed = new Typed("#type_connect", {
+          stringsElement: "#typed_connect",
+          typeSpeed: 80,
+          backSpeed: 60,
+          loop: true
+        });
+      </script>
+
+    </div>
+
+  </body>
+
+
+  <footer>
+    <h3>© 2020 Amy Huang</h3>
+  </footer>
+
+</html>

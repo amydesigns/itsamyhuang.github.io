@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>resume look</title>
+    <link href="./styles/css.css" type="text/css" rel="stylesheet" />
+    <link href="./media/favicon.png" type="image/png" rel="shortcut icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./scripts/navbar.js" type="text/javascript"></script>
+    <script src="./scripts/isInViewport.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="service.html">service</a></li>
+        <li><a href="connect.html">connect</a></li>
+        <li><a href="fun.html">fun</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME LANDING PAGE -->
+    <div class="fun_container tag">
+
+      <div class="fun_text">
+        <h1><span id="type_cs"></span></h1>
+      </div>
+
+      <div id="typed_cs">
+        <p>coming soon</p>
+      </div>
+
+      <script>
+        var typed = new Typed("#type_cs", {
+          stringsElement: "#typed_cs",
+          typeSpeed: 80,
+          backSpeed: 60,
+          loop: true
+        });
+      </script>
+    </div>
+
+  </body>
+
+
+  <footer>
+    <h3>© 2020 Amy Huang</h3>
+  </footer>
+
+</html>
