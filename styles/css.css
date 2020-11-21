@@ -32,9 +32,7 @@ html {
 }
 
 body {
-  zoom: 0.8;
-  -moz-transform: scale(0.8);
-  -moz-transform-origin: 0 0;
+  zoom: 0.75;
   font-family: "Roboto", 'Arial', sans-serif;
   text-transform: lowercase;
   color: #383e56;
