@@ -32,8 +32,6 @@ html {
 }
 
 body {
-  -moz-transform: scale(1);
-  -moz-transform-origin: 0 0;
   font-family: "Roboto", 'Arial', sans-serif;
   text-transform: lowercase;
   color: #383e56;
@@ -41,12 +39,16 @@ body {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 108px;
+}
+
+h2 {
+  font-size: 22px;
 }
 
 p {
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 
@@ -93,7 +95,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  transition:300ms ease;
+  transition: 0.5s ease;
   background: transparent;
 }
 
@@ -104,14 +106,14 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  padding: 30px 15px;
-  font-size: 24px;
+  padding: 25px 15px;
+  font-size: 18px;
 }
 
 nav a {
   color: #383e56;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 5px 10px;
   position: relative;
 }
 
@@ -138,6 +140,7 @@ nav a:hover:before {
 
 nav.scrolled{
   background-color: #383e56;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 nav.scrolled a {
@@ -189,13 +192,13 @@ nav.scrolled a:hover:before {
 }
 
 .home_text {
-  max-width: 200px;
+  max-width: 180px;
   z-index: 1000;
   margin-left: 50px;
 }
 
 .home_text h1 {
-  height: 420px;
+  height: 390px;
 }
 
 .home_text p {
@@ -203,7 +206,7 @@ nav.scrolled a:hover:before {
 }
 
 #web_image {
-  max-width: 760px;
+  max-width: 680px;
 }
 
 #web_image img {
@@ -217,16 +220,16 @@ nav.scrolled a:hover:before {
 }
 
 .rect {
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   border-radius: 30px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  margin: 50px;
+  margin: 25px;
   transition: transform .3s;
 }
 
 .rect:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .rect_internal {
@@ -235,15 +238,15 @@ nav.scrolled a:hover:before {
 
 .rect p {
   text-transform: none;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .icon {
   width: 66px;
   border-radius: 12px;
-  margin: 25px 0;
+  margin: 15px 0;
 }
 
 .about_container {
@@ -256,7 +259,7 @@ nav.scrolled a:hover:before {
 
 .about_container p {
   text-transform: none;
-  max-width: 1250px;
+  max-width: 1000px;
   margin: 25px 75px;
 }
 
@@ -269,11 +272,11 @@ nav.scrolled a:hover:before {
 }
 
 .article_text {
-  width: 480px;
+  width: 420px;
 }
 
 .article_container h3 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
@@ -291,23 +294,29 @@ nav.scrolled a:hover:before {
 
 /* CONNECT CONTAINER */
 
-.connect_container {
+.container {
   display:flex;
   justify-content: center;
+}
+
+.connect_container {
+  display:flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 120px;
 }
 
 .connect_text {
-  width: 600px;
-  text-align: right;
+  width: 480px;
+  margin: 50px auto;
+  text-align: left;
 }
 
 .phone {
   position: relative;
-  height: 800px;
-  width: 420px;
+  margin: auto 50px;
+  height: 760px;
+  width: 380px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   display: flex;
@@ -317,8 +326,8 @@ nav.scrolled a:hover:before {
 
 .phone_screen {
   position: absolute;
-  height: 760px;
-  width: 380px;
+  height: 720px;
+  width: 340px;
   border-radius: 40px;
   background-color: #f5f5f5;
   display: flex;
@@ -354,7 +363,7 @@ nav.scrolled a:hover:before {
   position: absolute;
   width: 0px;
   height: 100%;
-  right: 0px;
+  right: 20px;
   top: 0px;
   bottom: 0px;
   content: '';
@@ -363,7 +372,7 @@ nav.scrolled a:hover:before {
 }
 
 .social_group:hover:after {
-  width: 120px;
+  width: 100px;
   background: #383e56;
 }
 
@@ -373,7 +382,7 @@ nav.scrolled a:hover:before {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 120px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +396,8 @@ nav.scrolled a:hover:before {
 }
 
 .social_overlay img {
-  height: 40px;
+  height: 35px;
+  margin-right: 40px;
 }
 
 .social_group .icon {
@@ -409,8 +419,8 @@ nav.scrolled a:hover:before {
 }
 
 .grid {
-  max-width: 1350px;
-  margin: auto;
+  max-width: 1050px;
+  margin: 0 auto 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -424,9 +434,13 @@ nav.scrolled a:hover:before {
 
 
 .work_text {
-  max-width: 900px;
-  margin: 150px 0 50px;
+  max-width: 800px;
+  margin: 150px 25px 50px;
   text-align: center;
+}
+
+.work_text p {
+  margin: 25px;
 }
 
 /* ---- button ---- */
@@ -451,11 +465,11 @@ nav.scrolled a:hover:before {
 
 .element-item {
   /* position: relative; */
-  width: 350px;
-  height: 475px;
+  width: 300px;
+  height: 425px;
   border-radius: 30px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  margin: 50px;
+  margin: 25px;
   transition: .3s;
 }
 
@@ -465,14 +479,14 @@ nav.scrolled a:hover:before {
 }
 
 .element-item:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .element-item p {
   text-transform: none;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .rect_internal {
@@ -481,7 +495,7 @@ nav.scrolled a:hover:before {
 
 .button {
   padding: 15px 25px;
-  margin: 25px;
+  margin: 15px;
   border-radius: 10px;
   border: none;
   transition: 0.3s ease;
@@ -489,7 +503,8 @@ nav.scrolled a:hover:before {
 }
 
 .button h3 {
-  font-size: 18px;
+  font-size: 14px;
+  letter-spacing: 1px;
   color: #fff;
 }
 
@@ -541,7 +556,12 @@ nav.scrolled a:hover:before {
   display: inline-flex;
   align-items: center;
   border-radius: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.work_tag h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .circle {
@@ -588,24 +608,23 @@ nav.scrolled a:hover:before {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 500px;
+  height: 400px;
   background-color: #f9f9f9;
   border-radius: 30px;
-  margin: 200px auto 100px;
+  margin: 100px auto 75px;
 }
 
 .service-text {
-  flex: 1;
+  flex: 2;
   margin: 0 50px 0 100px;
 }
 
 .service-text h1 {
-  font-size: 76px;
+  font-size: 72px;
 }
 
 .service-img {
   flex: 1;
-  /* width: 400px; */
   margin-right: 100px;
 }
 
@@ -617,7 +636,7 @@ a.more {
   text-decoration: none;
   display: inline-flex;
   justify-content: center;
-  width: 120px;
+  width: 100px;
   padding: 15px 25px;
   border-radius: 10px;
   background-color: #DF5E88;
@@ -626,7 +645,7 @@ a.more {
 }
 
 a.more h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -641,7 +660,7 @@ a.more:hover h3 {
 }
 
 a.subtle {
-  width: 114px;
+  width: 97px;
   padding: 12px 25px;
   background: transparent;
   border: 3px solid #383e56;
@@ -673,4 +692,69 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 980px) {
+  .service-text {
+    flex: 1;
+  }
+
+  .service-text h1 {
+    font-size: 46px;
+  }
+
+  a.more {
+    margin: 10px auto 5px;
+  }
+
+  .service-img img {
+    width: 125%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home_container {
+    flex-wrap: wrap;
+    margin: 0 50px;
+    height: auto;
+  }
+
+  #web_image {
+    width: 600px;
+  }
+
+  .home_text {
+    margin: 100px auto 50px;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .home_text h1 {
+    height: auto;
+    font-size: 86px;
+  }
+
+  .home_text p {
+    width: auto;
+  }
+
+  .about_container {
+    margin: 50px auto;
+  }
+
+  .grid {
+    width: 725px;
+  }
+};
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    width: 400px;
+  }
+
+  .service-header {
+    flex-wrap: wrap;
+  }
 }
