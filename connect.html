@@ -26,7 +26,26 @@
     </nav>
 
     <!-- HOME LANDING PAGE -->
+    <div class="container">
     <div class="connect_container tag">
+
+      <div class="connect_text">
+        <h2>how would you like to</h2>
+        <h1>c<span id="type_connect"></span></h1>
+      </div>
+
+      <div id="typed_connect">
+        <p>onnect?</p>
+      </div>
+
+      <script>
+        var typed = new Typed("#type_connect", {
+          stringsElement: "#typed_connect",
+          typeSpeed: 80,
+          backSpeed: 60,
+          loop: true
+        });
+      </script>
 
       <div class="phone">
         <div class="phone_screen">
@@ -68,25 +87,10 @@
         </div>
       </div>
 
-      <div class="connect_text">
-        <h2>how would you like to</h2>
-        <h1>c<span id="type_connect"></span></h1>
-      </div>
-
-      <div id="typed_connect">
-        <p>onnect?</p>
-      </div>
-
-      <script>
-        var typed = new Typed("#type_connect", {
-          stringsElement: "#typed_connect",
-          typeSpeed: 80,
-          backSpeed: 60,
-          loop: true
-        });
-      </script>
-
     </div>
+  </div>
+
+
 
   </body>
 
