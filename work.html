@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>work samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles/css.css" type="text/css" rel="stylesheet" />
+    <link href="./media/favicon.png" type="image/png" rel="shortcut icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./scripts/navbar.js" type="text/javascript"></script>
+    <script src="./scripts/isInViewport.js" type="text/javascript"></script>
+    <script src="./scripts/isotope.pkgd.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="service.html">service</a></li>
+        <li><a href="connect.html">connect</a></li>
+        <li><a href="fun.html">fun</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="work_container tag">
+
+      <div class="work_text">
+        <h1>my w<span id="type_work"></span></h1>
+        <p>I am graduated with a UX Design concentration at Cornell University's Information Science program.
+          My work in design consists primarily of UX/UI design and web design. </p>
+
+        <div class="button-group filters-button-group">
+          <button class="button all-btn" data-filter="*"><h3>show all</h3></button>
+          <button class="button ux-btn" data-filter=".ux"><h3>ux case study</h3></button>
+          <button class="button web-btn" data-filter=".web"><h3>web design</h3></button>
+        </div>
+
+        <div id="typed_work">
+          <p>ork</p>
+        </div>
+
+        <script>
+          var typed = new Typed("#type_work", {
+            stringsElement: "#typed_work",
+            typeSpeed: 80,
+            backSpeed: 60,
+            loop: true
+          });
+        </script>
+
+      </div>
+
+    </div>
+
+      <div class="grid tag">
+
+        <!-- FIT.M8 APP RECTANGLE -->
+        <div class="element-item ux">
+          <img class="work_snippet" src="./media/fitm8.png" alt="Fit.M8 Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag web-tag">
+              <div class="circle"></div>
+              <h3>ux case study</h3>
+            </div>
+            <h2>fit.m8 mobile app</h2>
+            <p>Beside being its co-founder and product lead, I worked on
+              a fair amount of its design...
+              <a class="a_text" href="/">coming soon!</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- PERSONAL WEBSITE RECTANGLE -->
+        <div class="element-item web">
+          <img class="work_snippet" src="./media/pw.png" alt="Personal Website Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag web-tag">
+              <div class="circle"></div>
+              <h3>web design</h3>
+            </div>
+            <h2>personal website</h2>
+            <p>You are looking right at it! I design and created this website using HTML, CSS, and JavaScript...
+              <a class="a_text" href="http://amyhuang.me">see project ➜</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- LET'S LEASE RECTANGLE -->
+        <div class="element-item ux">
+          <img class="work_snippet" src="./media/letslease.png" alt="Let's Lease Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag ux-tag">
+              <div class="circle"></div>
+              <h3>ux case study</h3>
+            </div>
+            <h2>let's lease!</h2>
+            <p>I worked on a semester long UX project with three other students for INFO 3450:
+              HCI Design... <a class="a_text" href="https://itsamyhuang.medium.com/lets-lease-designing-a-college-subletting-platform-from-scratch-9007b09fcb64">
+              see project ➜</a></p>
+          </div>
+        </div>
+
+        <!-- POWERHOUSE RECTANGLE -->
+        <div class="element-item ux">
+          <img class="work_snippet" src="./media/ph.png" alt="Powerhouse Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag ux-tag">
+              <div class="circle"></div>
+              <h3>ux case study</h3>
+            </div>
+            <h2>powerhouse education</h2>
+            <p>As part of a personal project that spanned a few days,
+              I created a web platform for online learning... <a class="a_text" href="https://itsamyhuang.medium.com/lets-lease-designing-a-college-subletting-platform-from-scratch-9007b09fcb64">
+              see project ➜</a></p>
+          </div>
+        </div>
+
+
+        <!--PM BOOK CLUB RECTANGLE -->
+        <div class="element-item web">
+          <img class="work_snippet" src="./media/pmbook.png" alt="PM Book Club Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag web-tag">
+              <div class="circle"></div>
+              <h3>web design</h3>
+            </div>
+            <h2>PM Book Club</h2>
+            <p>As a Product Design Intern at Belle Apps, I produced a
+              book review website for tech professionals...
+              <a class="a_text" href="https://www.pmbookclub.com">
+              see project ➜</a></p>
+          </div>
+        </div>
+
+        <!--BIG RED HACKS RECTANGLE -->
+        <div class="element-item web">
+          <img class="work_snippet" src="./media/brh.png" alt="BigRed//Hacks Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag web-tag">
+              <div class="circle"></div>
+              <h3>web design</h3>
+            </div>
+            <h2>big red//hacks</h2>
+            <p>I designed its 2019 fall hackathon website,
+              which hosts the largest annual hackathon at cornell...
+              <a class="a_text" href="https://www.bigredhacks.com/2019">
+              see project ➜</a></p>
+          </div>
+        </div>
+
+        <!--DUOLINGO RECTANGLE -->
+        <div class="element-item ux">
+          <img class="work_snippet" src="./media/duolingo.png" alt="Duolingo Case Study Snippet"/>
+          <div class="rect_internal">
+            <div class="work_tag ux-tag">
+              <div class="circle"></div>
+              <h3>ux case study</h3>
+            </div>
+            <h2>duolingo clubs</h2>
+            <p>I completed a case study for a design
+              course on an earlier version of the Duolingo app...
+              <a class="a_text" href="https://blog.prototypr.io/encourage-user-posts-on-duolingo-clubs-a-design-case-study-2836701e8373">
+              see project ➜</a></p>
+          </div>
+        </div>
+
+      </div>
+
+
+    <script>
+    // external js: isotope.pkgd.js
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function() {
+        var number = $(this).find('.number').text();
+        return parseInt( number, 10 ) > 50;
+      },
+      // show if name ends with -ium
+      ium: function() {
+        var name = $(this).find('.name').text();
+        return name.match( /ium$/ );
+      }
+    };
+    // bind filter button click
+    $('.filters-button-group').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+
+  </script>
+
+  </body>
+
+
+  <footer>
+    <h3>© 2020 Amy Huang</h3>
+  </footer>
+
+</html>
